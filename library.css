@@ -1,0 +1,97 @@
+body {
+    font-family: Courier;
+    padding: 4% 8% 4% 8%;
+}
+
+.title__primary {
+    margin: 8px;
+}
+
+.toolbar {
+    color: #757575;
+    padding: 8px;
+}
+
+.btn__submit {
+    font-family: inherit;
+    width: 160px;
+    padding: 8px;
+    margin: 4px;
+    cursor: pointer;
+}
+
+.btn__icon {
+    font-family: inherit;
+    padding: 4px 16px 4px 16px;
+    margin: 0px 16px 0px 16px;
+    cursor: pointer;
+}
+
+.btn__iconLabel {
+    font-family: inherit;
+    padding: 4px 16px 4px 16px;
+    margin: 0px 16px 0px 16px;
+    cursor: pointer;
+}
+
+.form__container {
+    border: 1px solid #BDBDBD;
+    border-radius: 4px;
+    padding: 32px;
+    margin: 8px;
+}
+
+.form__input {
+    font-family: inherit;
+    max-width: 160px;
+    border: 1px solid #212121;
+    border-radius: 4px;
+    padding: 8px;
+    margin: 4px;
+}
+
+.form__dropdown {
+    font-family: inherit;
+    width: 88px;
+    border: 1px solid #212121;
+    border-radius: 4px;
+    padding: 8px;
+    margin: 4px;
+    cursor: pointer;
+}
+
+.table__container {
+    width: 100%;
+    vertical-align: center;
+    text-align: left;
+    border-collapse: collapse;
+}
+
+.table__header {
+    font-weight: 900;
+    text-align: left;
+}
+
+.table__row { 
+    font-size: 16px;
+    border-bottom: 1px solid #E0E0E0;
+}
+
+.table__row-item {
+    max-width: 160px;
+    overflow: auto;
+    padding: 16px;
+}
+
+.table__cell--empty {
+    font-size: 14px;
+    text-align: center;
+    color: #757575;
+    background-color: #F5F5F5;
+    border-radius: 4px; 
+    padding: 16px;
+}
+
+.table__cell--hidden {
+    display: none;
+}
