@@ -7,7 +7,7 @@ Simple browser library app, where user can add and remove books, specify book pa
 - Built using: **HTML**, **CSS**, **Javascript**
 - Data stored in **localStorage**
 
-#### ► See live preview <a href="">here</a> 👀
+#### ► <a href="">Live demo</a> 👀
 
 
 ## Overview
