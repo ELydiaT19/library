@@ -1,5 +1,8 @@
+# 📚 Library
+
+
 ## About the project
-Simple library app, where user can add and remove books, specify book pages, update read status.
+Simple browser library app, where user can add and remove books, specify book pages, update read status.
 <br>Created as part of The odin Project full stack Javascript <a href="https://www.theodinproject.com/lessons/javascript-library">curriculum</a>.
 - Built using: **HTML**, **CSS**, **Javascript**
 - Data stored in **localStorage**
@@ -36,6 +39,3 @@ _Users can_
 - Practiced array methods (e.g. `filter()`, `find()`)
 - Practiced usage of object constructors
 - Practiced CSS table styling
-
-
-
