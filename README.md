@@ -11,22 +11,22 @@ Simple browser library app, where user can add and remove books, specify book pa
 
 
 ## Overview
-### Features
-_Users can_
+### ☑️ Features
+_Users can.._
 - **Add** a book
 - Specify book page numbers and read status when adding a new book
 - **Update** the read status of an existing book
 - **Delete** an existing book
 
-### Data storage
+### 🧰 Data storage
 - Data saved to **localStorage**
 
-### Tools used
+### 🔧 Tools used
 - Visual Studio Code
 - Git & GitHub
 - macOS Terminal
 
-### Credits
+### 💙 Credits
 - Refered to <a href="https://github.com/mooniiDev/library">mooniiDev's project</a> for layout inspiration & user interaction study
 
 
