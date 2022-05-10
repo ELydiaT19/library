@@ -5,7 +5,7 @@
 Simple browser library app, where user can add and remove books, specify book pages, update read status.
 <br>Created as part of The odin Project full stack Javascript <a href="https://www.theodinproject.com/lessons/javascript-library">curriculum</a>.
 
-#### ► <a href="">Live demo</a> 👀
+#### ► <a href="https://emilielydiat.github.io/library/">Live demo</a> 👀
 
 #### Features
 - **Add** a book
