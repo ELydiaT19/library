@@ -38,4 +38,4 @@ _Users can.._
 - Practiced usage of `counter` variable to assign a unique ID to objects & DOM elements
 - Practiced **array methods** (e.g. `filter()`, `find()`)
 - Practiced object **constructors** & `this`
-- Practiced CSS table styling
+- Practiced styling HTML table element
