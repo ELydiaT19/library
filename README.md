@@ -39,3 +39,4 @@ _Users can.._
 - Practiced **array methods** (e.g. `filter()`, `find()`)
 - Practiced object **constructors** & `this`
 - Practiced styling HTML table element
+- Practiced **BEM naming convention** for CSS classes 
