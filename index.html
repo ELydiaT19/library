@@ -1,72 +1,74 @@
 <!DOCTYPE html>
 <html>
-
-<head>
+  <head>
     <script src="library.js" defer></script>
-    <link rel="stylesheet" href="library.css">
-</head>
+    <link rel="stylesheet" href="library.css" />
+  </head>
 
-<body>
-    <h1 class="title__primary">📚 MyLibrary</h2>
-    <div class="toolbar">Total: <span id="books-total"></span> | Read: <span id="books-read"></span></div>
+  <body>
+    <h1 class="title__primary">📚 MyLibrary</h1>
+    <div class="toolbar">
+      Total: <span id="books-total"></span> | Read:
+      <span id="books-read"></span>
+    </div>
 
     <form class="form__container" id="form">
-        <label for="book-title">
-            <input
-                type="text"
-                class="form__input"
-                name="book-title"
-                id="book-title"
-                placeholder="Book title" 
-                required
-            ></label>
-        <label for="book-author">
-            <input
-                type="text"
-                class="form__input"
-                name="book-author"
-                id="book-author"
-                placeholder="Book author"
-                required
-            ></label>
-        <label for="book-pages">
-            <input
-                type="number"
-                class="form__input"
-                name="book-pages"
-                id="book-pages"
-                placeholder="Number of pages"
-                required
-            ></label>
-        <label for="book-read-status">
-            <select
-                type="dropdown"
-                class="form__dropdown"
-                name="book-read-status"
-                id="book-read-status"
-                required>
-                <option value="Read">Read</option>
-                <option value="Unread" selected>Unread</option>
-            </select></label>
-        <button
-          type="submit"
-          id="btn-submit"
-          class="btn__submit">
+      <label for="book-title">
+        <input
+          type="text"
+          class="form__input"
+          name="book-title"
+          id="book-title"
+          placeholder="Book title"
+          required
+      /></label>
+      <label for="book-author">
+        <input
+          type="text"
+          class="form__input"
+          name="book-author"
+          id="book-author"
+          placeholder="Book author"
+          required
+      /></label>
+      <label for="book-pages">
+        <input
+          type="number"
+          class="form__input"
+          name="book-pages"
+          id="book-pages"
+          placeholder="Number of pages"
+          required
+      /></label>
+      <label for="book-read-status">
+        <select
+          type="dropdown"
+          class="form__dropdown"
+          name="book-read-status"
+          id="book-read-status"
+          required
+        >
+          <option value="Read">Read</option>
+          <option value="Unread" selected>Unread</option>
+        </select></label
+      >
+      <button type="submit" id="btn-submit" class="btn__submit">
         Add book
-        </button>
+      </button>
     </form>
 
     <table class="table__container">
-        <tr class="table__header">
-            <th class="table__row-item">Title</th>
-            <th class="table__row-item">Author</th>
-            <th class="table__row-item">Pages</th>
-            <th class="table__row-item">Status</th>
-        </tr>
-        <tr>
-            <td class="table__cell--empty table__cell--hidden" colspan="5">Your library is empty.<br>Add a new book and it will show up here.</td>
-        </tr>
+      <tr class="table__header">
+        <th class="table__row-item">Title</th>
+        <th class="table__row-item">Author</th>
+        <th class="table__row-item">Pages</th>
+        <th class="table__row-item">Status</th>
+      </tr>
+      <tr>
+        <td class="table__cell--empty table__cell--hidden" colspan="5">
+          Your library is empty.<br />Add a new book and it will show up here.
+        </td>
+      </tr>
     </table>
-</body>
-
+  </body>
 </html>
