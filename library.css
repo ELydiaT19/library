@@ -29,6 +29,7 @@ body {
 
 .btn__iconLabel {
   font-family: inherit;
+  width: 120px;
   padding: 4px 16px 4px 16px;
   margin: 0px 16px 0px 16px;
   cursor: pointer;

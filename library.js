@@ -57,22 +57,33 @@ function loadBooksFromStorage() {
   }
 }
 
-function onReadStatusBtn(bookId) {
-  // target this book
-  thisBook = books.find((book) => book.bookId === bookId);
-
+function toggleReadStatus(thisBook) {
   if (thisBook.readStatus === "Unread") {
     thisBook.readStatus = "Read";
   } else if (thisBook.readStatus === "Read") {
     thisBook.readStatus = "Unread";
   }
+}
+
+function toggleReadStatusBtnIcon(thisBook, readStatusBtn) {
+  if (thisBook.readStatus === "Read") {
+    readStatusBtn.innerHTML = `✔️ ${thisBook.readStatus}`;
+  } else if (thisBook.readStatus === "Unread") {
+    readStatusBtn.innerHTML = `⏳ ${thisBook.readStatus}`;
+  }
+}
+
+function onReadStatusBtn(bookId) {
+  // target this book
+  thisBook = books.find((book) => book.bookId === bookId);
 
   // target this row's readStatus btn
-  thisReadStatusBtn = document
+  readStatusBtn = document
     .querySelector(`tr[data-id="${bookId}"]`)
     .querySelector(".btn__iconLabel");
-  thisReadStatusBtn.innerHTML = thisBook.readStatus;
 
+  toggleReadStatus(thisBook);
+  toggleReadStatusBtnIcon(thisBook, readStatusBtn);
   updateToolbarCount();
   localStorage.setItem("storedBooks", JSON.stringify(books));
 }
@@ -114,7 +125,7 @@ function createRow(thisBook) {
   const readStatusBtnWrapper = document.createElement("td");
   const readStatusBtn = document.createElement("button");
   readStatusBtn.classList.add("btn__iconLabel");
-  readStatusBtn.innerHTML = thisBook.readStatus;
+  toggleReadStatusBtnIcon(thisBook, readStatusBtn);
   readStatusBtnWrapper.append(readStatusBtn);
   tableRow.append(readStatusBtnWrapper);
 
@@ -164,7 +175,6 @@ function onSubmit(e) {
   if (e.target.checkValidity()) {
     createBook();
     resetForm();
-    console.log(books);
   }
   // prevent form data being sent away
   e.preventDefault();
